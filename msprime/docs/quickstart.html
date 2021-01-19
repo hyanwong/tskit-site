@@ -1,0 +1,503 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quickstart &mdash; msprime 0.1.dev1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
+  <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/thebelab-helper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="What is msprime?" href="what_is.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> msprime
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="what_is.html">What is msprime?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ancestry">Ancestry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mutations">Mutations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#demography">Demography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upgrading-from-0-x">Upgrading from 0.x</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#backwards-compatibility">Backwards compatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Ancestry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Demography</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Mutations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#utilities">Utilities</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Running simulations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ancestry.html">Ancestry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mutations.html">Mutations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demography.html">Demography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="likelihoods.html">Likelihoods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickref.html">API quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command line interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Developer documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CITATION.html">Citing msprime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">PORTING IN PROGRESS: Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">PORTING IN PROGRESS: API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">msprime</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Quickstart</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quickstart">
+<span id="sec-quickstart"></span><h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>This is a rough draft and needs more work.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p>This section is probably unnecessary now, can just link to the
+installation page.</p>
+</div>
+<p>If you have <a class="reference external" href="https://docs.conda.io/en/latest/">conda</a> installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install -c conda-forge msprime
+</pre></div>
+</div>
+<p>otherwise:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m pip install msprime
+</pre></div>
+</div>
+<p>If these commands don’t work, or for more installation options,
+please see the <a class="reference internal" href="installation.html#sec-installation"><span class="std std-ref">Installation</span></a> page for more details.</p>
+</div>
+<div class="section" id="ancestry">
+<h2>Ancestry<a class="headerlink" href="#ancestry" title="Permalink to this headline">¶</a></h2>
+<p>Msprime can simulate ancestral histories for a set of sample
+genomes under a variety of evolutionary models. The default model
+is the <a class="reference external" href="https://en.wikipedia.org/wiki/Coalescent_theory">coalescent</a>,
+which assumes a single randomly mating population of a fixed size.
+In the simplest case of no
+<a class="reference external" href="https://en.wikipedia.org/wiki/Genetic_recombination">recombination</a>
+the result of an ancestry simulation is a genealogical <a class="reference external" href="https://en.wikipedia.org/wiki/Phylogenetic_tree">tree</a> relating the simulated
+samples to each other and their genetic ancestors. Msprime
+can efficiently simulate <a class="reference internal" href="ancestry.html#sec-ancestry-recombination"><span class="std std-ref">recombination</span></a>
+and other processes which result in <em>multiple</em> trees along the
+genome. The output of an ancestry simulation is a therefore
+tree <em>sequence</em> which we use the <a class="reference external" href="https://tskit.readthedocs.io/en/stable/introduction.html#sec-introduction" title="(in tskit v0.3)"><span class="xref std std-ref">tskit</span></a>
+library to represent. Tskit has a rich set of
+features for analysing these genealogical histories.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">msprime</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">SVG</span>
+
+<span class="c1"># Simulate an ancestral history for 3 diploid samples under the coalescent</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">msprime</span><span class="o">.</span><span class="n">sim_ancestry</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1"># Visualise the simulated ancestral history.</span>
+<span class="n">SVG</span><span class="p">(</span><span class="n">ts</span><span class="o">.</span><span class="n">draw_svg</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/quickstart_0_0.svg" src="_images/quickstart_0_0.svg" /></div>
+</div>
+<div class="admonition-todo admonition" id="id3">
+<p class="admonition-title">Todo</p>
+<p>We want a list of quick pointers here to relevant sections of the
+documentation and tutorials.</p>
+</div>
+</div>
+<div class="section" id="mutations">
+<h2>Mutations<a class="headerlink" href="#mutations" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a> function generates a simulated ancestral
+history for some samples. This is often all we need for many purposes.
+If we want <a class="reference external" href="https://en.wikipedia.org/wiki/Genome">genome sequence</a>
+we must also simulate some
+<a class="reference external" href="https://en.wikipedia.org/wiki/Mutation">mutations</a> on these trees.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simulate an ancestral history for 3 diploid samples under the coalescent</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">msprime</span><span class="o">.</span><span class="n">sim_ancestry</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">mutated_ts</span> <span class="o">=</span> <span class="n">msprime</span><span class="o">.</span><span class="n">mutate</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">SVG</span><span class="p">(</span><span class="n">mutated_ts</span><span class="o">.</span><span class="n">draw_svg</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/quickstart_1_0.svg" src="_images/quickstart_1_0.svg" /></div>
+</div>
+<div class="admonition-todo admonition" id="id5">
+<p class="admonition-title">Todo</p>
+<p>Some example chunks where we show how to do something simple
+with the sequences and maybe how to export to VCF.</p>
+</div>
+<div class="admonition-todo admonition" id="id6">
+<p class="admonition-title">Todo</p>
+<p>List of pointers to the relevant sections of the documentation.</p>
+</div>
+</div>
+<div class="section" id="demography">
+<h2>Demography<a class="headerlink" href="#demography" title="Permalink to this headline">¶</a></h2>
+<p>By default ancestry simulations assume an extremely simple
+population structure in which a single randomly mating population
+of a fixed size exists for all time. For most simulations this
+is an unrealistic assumption, and so msprime provides a way
+to describe more complex demographic histories.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a 1D stepping stone model of demograpy</span>
+<span class="n">demography</span> <span class="o">=</span> <span class="n">msprime</span><span class="o">.</span><span class="n">Demography</span><span class="o">.</span><span class="n">stepping_stone_model</span><span class="p">([</span><span class="mi">100</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span> <span class="n">migration_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="c1"># Take one diploid sample each from the first and last demes</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+<span class="c1"># Simulate an ancestral history for this demography and sample.</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">msprime</span><span class="o">.</span><span class="n">sim_ancestry</span><span class="p">(</span><span class="n">samples</span><span class="o">=</span><span class="n">samples</span><span class="p">,</span> <span class="n">demography</span><span class="o">=</span><span class="n">demography</span><span class="p">)</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">tables</span><span class="o">.</span><span class="n">nodes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+            <div>
+                <style scoped="">
+                    .tskit-table tbody tr th:only-of-type {vertical-align: middle;}
+                    .tskit-table tbody tr th {vertical-align: top;}
+                    .tskit-table tbody td {text-align: right;}
+                </style>
+                <table border="1" class="tskit-table">
+                    <thead>
+                        <tr>
+                            <th>id</th><th>flags</th><th>population</th><th>individual</th><th>time</th><th>metadata</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>0.00000000000000</td><td></td></tr>
+<tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0.00000000000000</td><td></td></tr>
+<tr><td>2</td><td>1</td><td>9</td><td>1</td><td>0.00000000000000</td><td></td></tr>
+<tr><td>3</td><td>1</td><td>9</td><td>1</td><td>0.00000000000000</td><td></td></tr>
+<tr><td>4</td><td>0</td><td>6</td><td>-1</td><td>228.21454975556895</td><td></td></tr>
+<tr><td>5</td><td>0</td><td>5</td><td>-1</td><td>299.99087240331079</td><td></td></tr>
+<tr><td>6</td><td>0</td><td>0</td><td>-1</td><td>2683.59510305708773</td><td></td></tr>
+
+                    </tbody>
+                </table>
+            </div>
+</div></div>
+</div>
+<div class="admonition-todo admonition" id="id7">
+<p class="admonition-title">Todo</p>
+<p>Links into more detailed documentation</p>
+</div>
+</div>
+<div class="section" id="upgrading-from-0-x">
+<h2>Upgrading from 0.x<a class="headerlink" href="#upgrading-from-0-x" title="Permalink to this headline">¶</a></h2>
+<p>This section is to help 0.x users of the get up to speed quickly, summarising the new
+APIs and their main differences to what you are used to.</p>
+<p>The main change is that there are two new functions, <a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a> and
+<a class="reference internal" href="mutations.html#msprime.sim_mutations" title="msprime.sim_mutations"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_mutations()</span></code></a> which correspond to the 0.x functions <a class="reference internal" href="ancestry.html#msprime.simulate" title="msprime.simulate"><code class="xref py py-func docutils literal notranslate"><span class="pre">simulate()</span></code></a>
+and <a class="reference internal" href="mutations.html#msprime.mutate" title="msprime.mutate"><code class="xref py py-func docutils literal notranslate"><span class="pre">mutate()</span></code></a>. The 0.x functions are <strong>deprecated</strong> but <strong>will continue
+to be supported indefinitely</strong>.</p>
+<div class="section" id="backwards-compatibility">
+<h3>Backwards compatibility<a class="headerlink" href="#backwards-compatibility" title="Permalink to this headline">¶</a></h3>
+<p>All existing simulations should work as before, <em>except</em> for simulations relying on
+the detailed properties of RecombinationMaps. If your code uses the <code class="docutils literal notranslate"><span class="pre">num_loci</span></code>
+property, then it may need to be updated. The reason for this is that <code class="docutils literal notranslate"><span class="pre">msprime</span></code>
+has changed to simulate directly in physical coordinates internally (which has
+greatly simplified the code and solved many thorny issues) and this is fundamentally
+incompatible with the approach taken in 0.x. In the vast majority of cases, this
+will have no effect.</p>
+<p>If you are using <code class="docutils literal notranslate"><span class="pre">num_loci</span></code> to simulate a discrete genome, it may be simplest to
+convert your code to use the new <a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a> method. If you were following
+a recipe to simulate multiple chromosomes under the DTWF model, please see
+the <a class="reference internal" href="ancestry.html#sec-ancestry-multiple-chromosomes"><span class="std std-ref">updated recipe</span></a>.</p>
+</div>
+<div class="section" id="id8">
+<h3>Ancestry<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>The new <a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a> function replaces the 0.x <a class="reference internal" href="ancestry.html#msprime.simulate" title="msprime.simulate"><code class="xref py py-func docutils literal notranslate"><span class="pre">simulate()</span></code></a>
+function and is very similar. There are some important differences though:</p>
+<ul>
+<li><p>The <cite>samples</cite> argument now refers to the <strong>number of individuals</strong>
+rather than <strong>the number of nodes</strong> (i.e. monoploid genomes).
+Because the default <a class="reference internal" href="ancestry.html#sec-ancestry-samples-ploidy"><span class="std std-ref">ploidy</span></a>
+is 2 (see the next point) the upshot is that <code class="docutils literal notranslate"><span class="pre">sim_ancestry(2)</span></code> will
+result in a tree sequence with <em>four</em> sample nodes, not two. (It is
+possible to override this behaviour using the list of <a class="reference internal" href="ancestry.html#msprime.SampleSet" title="msprime.SampleSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">SampleSet</span></code></a>
+objects argument to <code class="docutils literal notranslate"><span class="pre">samples</span></code>.)</p></li>
+<li><p>There is now a <a class="reference internal" href="ancestry.html#sec-ancestry-samples-ploidy"><span class="std std-ref">Ploidy</span></a> argument, which has
+two effects:</p>
+<ol class="arabic simple">
+<li><p>Sets the default number of sample nodes per <em>individual</em></p></li>
+<li><p>Changes the timescale of the coalescent process (TODO link to a section
+that explains this effect.) By default <code class="docutils literal notranslate"><span class="pre">ploidy</span></code> is 2 and
+time is scaled scaled in units of 4N generations, which is the same as
+msprime 0.x.</p></li>
+</ol>
+</li>
+<li><p>Rather than two arguments <code class="docutils literal notranslate"><span class="pre">num_samples</span></code> and <code class="docutils literal notranslate"><span class="pre">samples</span></code>, the
+<a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a> function has a single argument <code class="docutils literal notranslate"><span class="pre">samples</span></code> which
+has different behaviour depending on the type of arguments provided.
+See <a class="reference internal" href="ancestry.html#sec-ancestry-samples"><span class="std std-ref">Specifying samples</span></a> for details.</p>
+<p>Note in particular that a list of <code class="docutils literal notranslate"><span class="pre">Sample</span></code> objects is <strong>not</strong> supported.</p>
+</li>
+<li><p>Similarly, there is now one argument <code class="docutils literal notranslate"><span class="pre">recombination_rate</span></code> which can
+be either a single value or a <a class="reference internal" href="utilities.html#msprime.RateMap" title="msprime.RateMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">RateMap</span></code></a> object. Note that the
+0.x <a class="reference internal" href="utilities.html#msprime.RecombinationMap" title="msprime.RecombinationMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">RecombinationMap</span></code></a> is deprecated and not supported as input
+to <a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a>. See <a class="reference internal" href="ancestry.html#sec-ancestry-recombination"><span class="std std-ref">Recombination</span></a> for more
+details.</p></li>
+<li><p>Simulations are peformed on a <strong>discrete</strong> genome by default. To get the
+0.x behaviour of a continuous genome, set <code class="docutils literal notranslate"><span class="pre">discrete_genome=False</span></code>.
+See <a class="reference internal" href="ancestry.html#sec-ancestry-discrete-genome"><span class="std std-ref">Discrete or continuous?</span></a> for more details.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">from_ts</span></code> argument used has been renamed to <code class="docutils literal notranslate"><span class="pre">initial_state</span></code> and
+accepts either a <a class="reference external" href="https://tskit.readthedocs.io/en/stable/python-api.html#tskit.TableCollection" title="(in tskit v0.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tskit.TableCollection</span></code></a> or <a class="reference external" href="https://tskit.readthedocs.io/en/stable/python-api.html#tskit.TreeSequence" title="(in tskit v0.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tskit.TreeSequence</span></code></a>
+argument. See <a class="reference internal" href="ancestry.html#sec-ancestry-initial-state"><span class="std std-ref">Specifying the initial state</span></a> for details.</p></li>
+<li><p>There is <strong>no</strong> <code class="docutils literal notranslate"><span class="pre">mutation_rate</span></code> argument to <a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a>: use
+<a class="reference internal" href="mutations.html#msprime.sim_mutations" title="msprime.sim_mutations"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_mutations()</span></code></a> instead.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">population_configurations</span></code>, <code class="docutils literal notranslate"><span class="pre">migration_matrix</span></code> and <code class="docutils literal notranslate"><span class="pre">demographic_events</span></code>
+arguments have been replace with a single argument <code class="docutils literal notranslate"><span class="pre">demography</span></code>, which must take
+a <a class="reference internal" href="demography.html#msprime.Demography" title="msprime.Demography"><code class="xref py py-class docutils literal notranslate"><span class="pre">Demography</span></code></a> instance. (See the next section for more details.)</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>Demography<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A new <a class="reference internal" href="demography.html#msprime.Demography" title="msprime.Demography"><code class="xref py py-class docutils literal notranslate"><span class="pre">Demography</span></code></a> object has been added for version 1.0 which
+encapsulates the functionality needed to define and debug demographic models
+in msprime. Demographic models can only be specified to <code class="docutils literal notranslate"><span class="pre">sim_ancestry</span></code>
+using an instance of this class.</p></li>
+<li><p>It is easy to create a <a class="reference internal" href="demography.html#msprime.Demography" title="msprime.Demography"><code class="xref py py-class docutils literal notranslate"><span class="pre">Demography</span></code></a> from the 0.x
+<code class="docutils literal notranslate"><span class="pre">population_configurations</span></code>, <code class="docutils literal notranslate"><span class="pre">migration_matrix</span></code> and <code class="docutils literal notranslate"><span class="pre">demographic_events</span></code>
+values using the <a class="reference internal" href="demography.html#msprime.Demography.from_old_style" title="msprime.Demography.from_old_style"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Demography.from_old_style()</span></code></a> method.</p></li>
+<li><p>The <a class="reference internal" href="demography.html#msprime.DemographyDebugger" title="msprime.DemographyDebugger"><code class="xref py py-class docutils literal notranslate"><span class="pre">DemographyDebugger</span></code></a> class should no longer be instantiated
+directly; instead use the <a class="reference internal" href="demography.html#msprime.Demography.debug" title="msprime.Demography.debug"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Demography.debug()</span></code></a> method.</p></li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>Mutations<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>For symmetry with the <a class="reference internal" href="ancestry.html#msprime.sim_ancestry" title="msprime.sim_ancestry"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_ancestry()</span></code></a> function, there is now a <a class="reference internal" href="mutations.html#msprime.sim_mutations" title="msprime.sim_mutations"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_mutations()</span></code></a>
+function. The 0.x <a class="reference internal" href="mutations.html#msprime.mutate" title="msprime.mutate"><code class="xref py py-func docutils literal notranslate"><span class="pre">mutate()</span></code></a> function is <strong>deprecated</strong>.</p></li>
+<li><p>The <a class="reference internal" href="mutations.html#msprime.sim_mutations" title="msprime.sim_mutations"><code class="xref py py-func docutils literal notranslate"><span class="pre">sim_mutations()</span></code></a> function works on a <strong>discrete</strong> genome by default.</p></li>
+<li><p>There are now also many new mutation models supported by :func:.sim_mutations;
+see <a class="reference internal" href="mutations.html#sec-mutations"><span class="std std-ref">Mutations</span></a> for details. These are <em>not</em> supported in the deprecated
+<a class="reference internal" href="mutations.html#msprime.mutate" title="msprime.mutate"><code class="xref py py-func docutils literal notranslate"><span class="pre">mutate()</span></code></a> function.</p></li>
+</ul>
+</div>
+<div class="section" id="utilities">
+<h3>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The 0.x class <a class="reference internal" href="utilities.html#msprime.RecombinationMap" title="msprime.RecombinationMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">RecombinationMap</span></code></a> has been <strong>deprecated</strong> in favour of the new
+<a class="reference internal" href="utilities.html#msprime.RateMap" title="msprime.RateMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">RateMap</span></code></a>. This was to (a) generalise the interface to accomodate varying
+rates of mutation and gene conversion along the genome; and (b) convert to a
+more modern numpy-based API.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="what_is.html" class="btn btn-neutral float-left" title="What is msprime?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2015-2020, Tskit Developers
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
