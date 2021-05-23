@@ -12,4 +12,4 @@ code_snippet: |2
   ##TODO##
 
 ---
-TODO Here is some content that is on the full page about tskit
+The tskit library provides the underlying functionality used to load, examine, and manipulate tree sequences, including efficient methods for calculating genetic statistics. It often forms part of an installation of other software packages such as msprime, SLiM, or tsinfer.
